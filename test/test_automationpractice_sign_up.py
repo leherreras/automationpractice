@@ -10,6 +10,7 @@ class AutomationPracticeSingUp(unittest.TestCase):
         url_base = "http://automationpractice.com"
         self.driver.get(url_base)
         self.page_authenticator = PageAuthenticator(self.driver)
+        # WebDriverWait(self.driver, 5).until(expected_conditions.presence_of_element_located(self.message_invalid_login))
 
     def test_create_account(self):
         # validate if isn't possible create a account
